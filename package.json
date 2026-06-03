@@ -1,0 +1,38 @@
+{
+  "name": "mcp-security-linter",
+  "version": "1.0.0",
+  "description": "A small CLI that scans MCP JSON configs for risky servers, secrets, shell wrappers, and broad filesystem access.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "mcp-security-linter": "./dist/cli.js",
+    "mcpsec": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js",
+    "test": "vitest run",
+    "check": "npm run build && npm test"
+  },
+  "keywords": [
+    "mcp",
+    "security",
+    "linter",
+    "cli",
+    "model-context-protocol"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.8"
+  }
+}
